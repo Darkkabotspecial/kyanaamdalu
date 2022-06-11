@@ -1,4 +1,4 @@
-import re
+#import re
 from os import environ
 
 id_pattern = re.compile(r'^.\d+$')
@@ -8,7 +8,7 @@ def is_enabled(value, default):
     elif value.lower() in ["false", "no", "0", "disable", "n"]:
         return False
     else:
-        return default
+        return default####
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
@@ -27,7 +27,7 @@ auth_users = [int(user) if id_pattern.search(user) else user for user in environ
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else auth_channel
-AUTH_GROUPS = [int(admin) for admin in environ.get("AUTH_GROUPS", "").split()]
+AUTH_GROUPS = [int(admin) for admin #in environ.get("AUTH_GROUPS", "").split()]
 TUTORIAL = "t.me/MainlandGroup_CC"
 # MongoDB information
 DATABASE_URI = environ['DATABASE_URI']
@@ -55,7 +55,7 @@ default_start_cap = """
 """
 
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001670146640##'))
 PICS = (environ.get('PICS', 'https://te.legra.ph/file/621f2c6491c0de7a31019.jpg https://te.legra.ph/file/749366baf5aa3261c5388.jpg https://te.legra.ph/file/bf6f3b0c90ac817fa5f48.jpg https://te.legra.ph/file/9c66d7fd10190ec8cc8b0.jpg https://te.legra.ph/file/2a0f093fd8fe39dd3c68c.jpg https://te.legra.ph/file/b98c5844bb601c722ca70.jpg')).split()
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'MaX_Bots_Support')
 IMDB = eval((environ.get('IMDB', "True")))
@@ -67,7 +67,7 @@ OMDB_API_KEY = environ.get("OMDB_API_KEY", "http://www.omdbapi.com/?i=tt3896198&
 if FILE_CAPTION.strip() == "":
     CUSTOM_FILE_CAPTION=None
 else:
-    CUSTOM_FILE_CAPTION=FILE_CAPTION
+    CUSTOM_FILE_CAPTION=FILE_CAPTION#
 if OMDB_API_KEY.strip() == "":
     API_KEY=None
 else:
