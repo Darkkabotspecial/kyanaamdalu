@@ -17,7 +17,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('🌺 Updates', url='https://t.me/movieskacona')
+                InlineKeyboardButton('🌺 Updates', url='https://t.me/+mzMpn-IdHPBmYmQ1')
             ],
             [
                 InlineKeyboardButton('Support 🍀', url='https://t.me/movieskacona')
@@ -39,7 +39,7 @@ async def start(client, message):
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🍿 Owner 🍿', url='https://t.me/movieskacona')
             ],[
-            InlineKeyboardButton('Updates 🌺', url='https://t.me/movieskacona'),
+            InlineKeyboardButton('Updates 🌺', url='https://t.me/+mzMpn-IdHPBmYmQ1'),
             InlineKeyboardButton('Support 🍀', url='https://t.me/movieskacona')
             ],[
             InlineKeyboardButton('🧿 About 🧿', callback_data='help')
@@ -83,7 +83,7 @@ async def start(client, message):
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🍿 Owner 🍿', url='https://t.me/Movieskacona')
             ],[
-            InlineKeyboardButton('Updates 🌺', url='https://t.me/movieskacona'),
+            InlineKeyboardButton('Updates 🌺', url='https://t.me/+mzMpn-IdHPBmYmQ1'),
             InlineKeyboardButton('Support 🍀', url='https://t.me/movieskacona')
             ],[
             InlineKeyboardButton('🧿 About 🧿', callback_data='help')
